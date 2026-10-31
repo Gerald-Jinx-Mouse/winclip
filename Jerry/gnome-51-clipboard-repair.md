@@ -81,5 +81,4 @@ Expected: **Enabled: Yes / State: ACTIVE**. If it reports ERROR, obtain the exte
 
 Original versions of the three changed files are in the backup's `source/` and `installed/` subfolders. If this patch causes problems after login, disable only WinClip and restore only those exact code files after checking for later edits; do not overwrite unrelated files or the clipboard history directory.
 
-The checkout's changes remain uncommitted on `custom`. Keep them when merging later upstream updates. Do not run the upstream installer over the customized extension; it currently still targets Shell 50 and could replace this repair.
-
+The checkout's changes were committed and pushed on `custom` on October 30, 2026. Keep them when merging later upstream updates. Do not run the upstream installer over the customized extension; it currently still targets Shell 50 and could replace this repair.
