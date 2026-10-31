@@ -90,7 +90,7 @@ export function pixbufToContent(pixbuf) {
         // Shell 50 takes the CoglContext as the first argument; earlier
         // releases did not have it.
         const ok = content.set_bytes(
-            Clutter.get_default_backend().get_cogl_context(),
+            global.stage.get_context().get_backend().get_cogl_context(),
             pixbuf.read_pixel_bytes(),
             pixbuf.get_has_alpha() ? Cogl.PixelFormat.RGBA_8888 : Cogl.PixelFormat.RGB_888,
             width, height,
